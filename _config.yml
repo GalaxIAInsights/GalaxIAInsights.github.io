@@ -1,12 +1,12 @@
 # Site settings
-title:
-email:
+title: GalaxIA Insights
+email: galaxiainsights@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: GalaxIAInsights
+github_username: GalaxIAInsights
 
 # Build settings
 markdown: kramdown
