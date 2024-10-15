@@ -1,262 +1,199 @@
-<style>
-    body {
-{
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  .text-blk {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    line-height: 25px;
-  }
-  
-  .responsive-cell-block {
-    min-height: 75px;
-  }
-  
-  .responsive-container-block {
-    min-height: 75px;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    justify-content: space-evenly;
-  }
-  
-  .outer-container {
-    padding-top: 10px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    background-color: #2578bb;
-  }
-  
-  .inner-container {
-    max-width: 1320px;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-  }
-  
-  .section-head-text {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 48px;
-    color:  rgb(255, 255, 255);
-    margin: 0 0 10px 0;
-    text-align: center;
-  }
-  
-  .section-subhead-text {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    line-height: 35px;
-    max-width: 470px;
-    text-align: center;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 60px;
-    margin-left: 0px;
-  }
-  
-  .img-wrapper {
-    width: 70%;
-    margin-bottom: 30px;
-  }
-  
-  .team-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .social-media-links {
-    width: 125px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .name {
-    font-size: 20px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    text-align: center;
-  }
-  
-  .position {
-    font-size: 15px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
-  
-  .team-img {
-    width: 100%;
-    height: 100%;
-    border: 2px solid white;
-    border-radius:50%;
-  }
-  
-  .team-card-container {
-    width: 320px;
-    margin: 0 0 40px 0;
-    
-  }
-  
-  @media (max-width: 500px) {
-    .outer-container {
-      padding: 10px 20px 10px 20px;
-    }
-  
-    .section-head-text {
-      text-align: center;
-    }
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        
+        .text-blk {
+            margin: 0;
+            line-height: 25px;
+        }
+        
+        .responsive-container-block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .outer-container {
+            padding: 10px 50px;
+            background-color: #2578bb;
+        }
+        
+        .inner-container {
+            max-width: 1320px;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        
+        
+        
+        .img-wrapper {
+            width: 70%;
+            margin-bottom: 30px;
+        }
+        
+        .team-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .section-head-text {
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 5px;
+          margin-left: 0px;
+          font-size: 35px;
+          font-weight: 700;
+          line-height: 48px;
+          color:  rgb(255, 255, 255);
+          margin: 0 0 10px 0;
+          text-align: center;
+        }
+        
+      .name {
+          font-size: 20px;
+          font-weight: 700;
+          color: rgb(255, 255, 255);
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 5px;
+          margin-left: 0px;
+          text-align: center;
+        }
+        
+        .position {
+          font-size: 15px;
+          font-weight: 300;
+          color: rgb(255, 255, 255);
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-bottom: 50px;
+          margin-left: 0px;
+          text-align: center;
+        }
+
+        .position a {
+          font-weight: 700;
+            color: #ffffff; /* Set your desired color */
+            text-decoration: none; /* Optional: Remove underline */
+        }
+
+        .position a:hover {
+          font-weight: 700;
+            color: #ffffff; /* Optional: Color change on hover */
+            text-decoration: underline; /* Optional: Add underline on hover */
+        }
+        
+        .team-img {
+            width: 100%;
+            height: 100%;
+            border: 2px solid white;
+            border-radius: 50%;
+        }
+        
+        .team-card-container {
+            flex: 1 1 calc(25% - 20px); /* Allow for 4 items per row */
+            margin: 10px; /* This margin will separate the cards */
+            max-width: 320px; /* Set a maximum width for the cards */
+        }
+        
+        .team-section {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of items to the next row */
+            justify-content: space-between; /* Space out the items */
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+            .team-card-container {
+                flex: 1 1 calc(50% - 20px); /* Allow for 2 items per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .team-card-container {
+                flex: 1 1 100%; /* Stack cards on small screens */
+            }
+            .outer-container {
+                padding: 10px 20px; /* Reduce padding on small screens */
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="responsive-container-block outer-container">
-    <div class="responsive-container-block inner-container">
-      <p class="text-blk section-head-text">
-        Our Team
-      </p>
-      <!-- <p class="text-blk section-subhead-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p> -->
-      <div class="responsive-container-block">
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-          <div class="team-card">
-            <div class="img-wrapper">
-              <img class="team-img" src="../img/changhoon.jpeg">
-            </div>
-            <p class="text-blk name">
-                ChangHoon Hahn
+    <div class="responsive-container-block outer-container">
+        <div class="responsive-container-block inner-container">
+            <p class="text-blk section-head-text">
+                Our Team
             </p>
-            <p class="text-blk position">
-              PhD in physics <br> Cosmological machine learning at <a href="https://web.astro.princeton.edu/">Princeton, US</a>.
-              <br><a href="https://changhoonhahn.github.io/">Webpage</a>
-            </p>
-            <!-- <div class="social-media-links">
-              <a href="http://www.twitter.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-              </a>
-              <a href="http://www.facebook.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-              </a>
-              <a href="http://www.instagram.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-              </a>
-            </div> -->
-          </div>
+            <div class="team-section" id="team-section"></div>
         </div>
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-          <div class="team-card">
-            <div class="img-wrapper">
-              <img class="team-img" src="../img/pablolemos.jpeg">
-            </div>
-            <p class="text-blk name">
-              Pablo Lemos Portela
-            </p>
-            <p class="text-blk position">
-                PhD in physics <br> Protein synthesis with machine learning at <a href="https://mila.quebec/en">MILA, Montreal</a>.
-                <br><a href="https://pablo-lemos.github.io/">Webpage</a>
-            </p>
-            <!-- <div class="social-media-links">
-              <a href="http://www.twitter.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-              </a>
-              <a href="http://www.facebook.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-              </a>
-              <a href="http://www.instagram.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-              </a>
-            </div> -->
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-          <div class="team-card">
-            <div class="img-wrapper">
-              <img class="team-img" src="../img/paco.jpeg">
-            </div>
-            <p class="text-blk name">
-                Francisco Villaescusa Navarro
-            </p>
-            <p class="text-blk position">
-              PhD in physics <br> Deep learning with cosmological simulations at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute, NY</a>.
-              <br><a href="https://franciscovillaescusa.github.io/">Webpage</a>
-            </p>
-            <!-- <div class="social-media-links">
-              <a href="http://www.twitter.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-              </a>
-              <a href="http://www.facebook.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-              </a>
-              <a href="http://www.instagram.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-              </a>
-            </div> -->
-          </div>
-        </div>
-        <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-          <div class="team-card">
-            <div class="img-wrapper">
-              <img class="team-img" src="../img/pablovd.png">
-            </div>
-            <p class="text-blk name">
-              Pablo Villanueva Domingo
-            </p>
-            <p class="text-blk position">
-                PhD in physics <br> Deep learning in autonomous driving at <a href="https://carla.org/">CARLA simulator, UAB</a>.
-                <br><a href="https://pablovd.github.io/">Webpage</a>
-            </p>
-            <!-- <div class="social-media-links">
-              <a href="http://www.twitter.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-              </a>
-              <a href="http://www.facebook.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
-              </a>
-              <a href="http://www.instagram.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-              </a>
-            </div> -->
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+
+<script>
+    const members = [
+        {
+            name: "ChangHoon Hahn",
+            image: "../img/changhoon.jpeg",
+            link: "https://changhoonhahn.github.io/",
+            position: "PhD in physics",
+            description: 'Cosmological machine learning at <a href="https://web.astro.princeton.edu/">Princeton, US</a>.'
+        },
+        {
+            name: "Pablo Lemos Portela",
+            image: "../img/pablolemos.jpeg",
+            link: "https://pablo-lemos.github.io/",
+            position: "PhD in physics",
+            description: 'Protein synthesis with machine learning at <a href="https://mila.quebec/en">MILA, Montreal</a>.'
+        },
+        {
+            name: "Francisco Villaescusa Navarro",
+            image: "../img/paco.jpeg",
+            link: "https://franciscovillaescusa.github.io/",
+            position: "PhD in physics",
+            description: 'Deep learning with cosmological simulations at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute, NY</a>.'
+        },
+        {
+            name: "Pablo Villanueva Domingo",
+            image: "../img/pablovd.png",
+            link: "https://pablovd.github.io/",
+            position: "PhD in physics",
+            description: 'Deep learning in autonomous driving at <a href="https://carla.org/">CARLA simulator, Universitat Autònoma de Barcelona</a>.'
+        }
+    ];
+
+    const teamSection = document.getElementById('team-section');
+    
+    members.forEach(member => {
+        const memberHTML = `
+            <div class="responsive-cell-block team-card-container">
+                <div class="team-card">
+                    <div class="img-wrapper">
+                        <a href="${member.link}">
+                            <img class="team-img" src="${member.image}" alt="${member.name}">
+                        </a>
+                    </div>
+                    <p class="text-blk name">${member.name}</p>
+                    <p class="text-blk position">${member.position} <br> ${member.description}</p>
+                </div>
+            </div>
+        `;
+        teamSection.innerHTML += memberHTML;
+    });
+</script>
+
+</body>
+</html>
